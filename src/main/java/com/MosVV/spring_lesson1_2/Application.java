@@ -81,7 +81,7 @@ public class Application {
             return coffee;
         }
         @PutMapping("/{id}")
-        ResponseEntity<Coffee> putCoffee(@PathVariable String id, @RequestBody Coffee coffee) {
+         ResponseEntity<Coffee> putCoffee(@PathVariable String id, @RequestBody Coffee coffee) {
             int coffeeIndex = -1;
             for (Coffee c : coffees) {
                 if (c.getId().equals(id)) {
